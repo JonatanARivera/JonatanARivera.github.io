@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Jonatan Rivera
-
+title: 
+subtitle: Jonatan Rivera
 ---
 ## Greetings
 
