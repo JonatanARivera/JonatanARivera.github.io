@@ -19,5 +19,3 @@ I am  presently looking for jobs related to Data Analyst,Software Engineering/Da
 ## Contact
 - LinkedIn: https://www.linkedin.com/in/jonatan-rivera/
 - Medium: https://jonatanalejandrorivera.medium.com/
-- Portfolio: https://jonatanarivera.github.io/
-
