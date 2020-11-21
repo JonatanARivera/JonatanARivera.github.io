@@ -1,16 +1,23 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Jonatan Rivera
+
 ---
+## Greetings
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Jonatan, and I am Data Scientist. I enjoy working on challenging projects that expand my current knowledge base in machine learning, data analysis, and data engineering. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I am  presently looking for jobs related to Data Analyst,Software Engineering/Data Engineering positions.Presently I am involved in a mini-internship environment called LABS with Lambda School. In this mini-internship, I am working with a cross functional team to meet the needs of a Bridges to Prosperity stakeholder. I am familiar with working with PostgresSQL,AWS,Docker,Heroku, and Jupyter Notebooks, locally and on Google Colabs.  👋
 
-What else do you need?
+## Skills
+- Languages: Python, SQL:MongoDB,Elephant SQL, AWS Postgres
+- APIs, FastApi, Flask
+- Deployment, AWS Heroku
+- Container Technology Experience: Docker
+- Git, GitHub
 
-### my history
+## Contact
+- LinkedIn: https://www.linkedin.com/in/jonatan-rivera/
+- Medium: https://jonatanalejandrorivera.medium.com/
+- Portfolio: https://jonatanarivera.github.io/
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
