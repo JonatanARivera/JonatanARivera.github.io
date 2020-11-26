@@ -14,8 +14,6 @@ author: Jonatan Rivera
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
     - Linked In: "https://www.linkedin.com/in/jonatan-rivera-5054346a/"
   Author's Blog: "https://jonatanalejandrorivera.medium.com/"
 
