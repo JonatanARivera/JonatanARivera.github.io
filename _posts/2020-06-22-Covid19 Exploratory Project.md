@@ -1,5 +1,10 @@
-# Is There an Association between Population and Covid-19 Deaths Per U.S county?
-
+---
+layout: post
+title:  Is There an Association between Population and Covid-19 Deaths Per U.S county?
+subtitle: 
+cover-img: /assets/img/path.jpg
+tags: [books, test]
+---
 
 GIF Above: Yellow Counties represent counties with a death toll greater or equal to 100. Hyperlink to the interactive map can be found here.Covid-19 has spread and impacted us in different magnitudes. For some of us, we have avoided contact with our closest family members, and for others, we have avoided hanging out at our favorite sports center. But, the vast majority of us have been affected by how much death toll Covid-19 has had in our respective counties or communities. For this reason, I felt the need to dig into the data available on Covid-19, and model potential correlations based on population and deaths per U.S counties.
 As a result, in this blog, I attempt to answer a basic question: is the population associated with Covid-19 deaths per U.S counties? From the 3D Scatter plot I made below, we can see there is logarithmic growth of Covid-19 deaths for the counties' corresponding population. This simply means, that as population increases, generally speaking, the number of deaths per county increases as well.
