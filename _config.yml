@@ -38,9 +38,9 @@ round-avatar: True
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "jonatan5696@berkeley.edu"
-  github: JonRivera
+  github: "https://github.com/JonRivera"
   linkedin: "https://www.linkedin.com/in/jonatan-rivera/"
-  
+  medium: "https://jonatanalejandrorivera.medium.com/"
   rss: true
 #  reddit: yourname
 #  
