@@ -7,6 +7,8 @@ tags: [books, test]
 ---
 
 ![alt text](http://cdn-images-1.medium.com/max/1800/1*EX1BIdsskT6UpuZ1uGYpmg.png/to/img.png)
+![alt text](assets/img/COVID-map.png)
+
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
 
