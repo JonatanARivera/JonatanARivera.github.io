@@ -1,24 +1,26 @@
 ---
 layout: post
-title:  Is There an Association between Population and Covid-19 Deaths Per U.S county?
+title:  Data Exploration Project
 subtitle: 
 cover-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
-GIF Above: Yellow Counties represent counties with a death toll greater or equal to 100. Hyperlink to the interactive map can be found here.Covid-19 has spread and impacted us in different magnitudes. For some of us, we have avoided contact with our closest family members, and for others, we have avoided hanging out at our favorite sports center. But, the vast majority of us have been affected by how much death toll Covid-19 has had in our respective counties or communities. For this reason, I felt the need to dig into the data available on Covid-19, and model potential correlations based on population and deaths per U.S counties.
-As a result, in this blog, I attempt to answer a basic question: is the population associated with Covid-19 deaths per U.S counties? From the 3D Scatter plot I made below, we can see there is logarithmic growth of Covid-19 deaths for the counties' corresponding population. This simply means, that as population increases, generally speaking, the number of deaths per county increases as well.
-"THERE IS A CORRELATION BETWEEN POPULATION AND DEATHS."
 
+I attempt to answer a basic question: is the population associated with Covid-19 deaths per U.S counties?
 
-
-Iris color scale goes from 0 to 100, where yellow points represent deaths greater or equal to 100.I have so far, been looking at the big picture. Now let us explore deeper, and look at subsets of the data I worked with. I begin by focusing on states known to have big populations and compare them against each other.
-"A BIGGER POPULATION DOES NOT ALWAYS EQUAL MORE DEATHS."
 
 
 
 Yellow points represent deaths over 100 ; also the size of points represents the amount death toll relative to other countiesFrom the scatter plots above we can see that New York State has several counties, represented as points, which on average have a bigger death toll compared to counties in California, despite California having a bigger population! This means that we can infer that the population alone, despite the correlation mentioned above, does not necessarily determine the death toll in counties. Other factors are very likely to play a role too.
+
 "HOW LATE SOCIAL DISTANCING POLICIES ARE IMPLEMENTED, MAY HAVE A ROLE IN CONTRIBUTING TO THE NUMBER OF DEATHS."
+
+<div>
+    <a href="https://plotly.com/~jonatan5696/26/?share_key=gsYWWjaCPhjTM1hhx0tqGK" target="_blank" title="NewYorkVSCalifornia" style="display: block; text-align: center;"><img src="https://plotly.com/~jonatan5696/26.png?share_key=gsYWWjaCPhjTM1hhx0tqGK" alt="NewYorkVSCalifornia" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="jonatan5696:26" sharekey-plotly="gsYWWjaCPhjTM1hhx0tqGK" src="https://plotly.com/embed.js" async></script>
+</div>
+
 One possible explanation for the higher death toll in some counties more than others, despite differences in population, could be due to how late a county implements social distancing policies. For example, Los Angeles County and New York City implemented stay at home policies as late as 4 weeks after their first reported cases of Covid-19, in their respective regions (1); which compared to the Bay Area in Northern California is late, having implemented policies 2 weeks earlier (1). Also, the staggering differences between these two states could also have to do with how late the statewide home orders were executed, which in New York, came about five days later after California's order(2).
 
 
