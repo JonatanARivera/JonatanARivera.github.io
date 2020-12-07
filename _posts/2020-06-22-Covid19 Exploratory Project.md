@@ -7,7 +7,7 @@ tags: [books, test]
 ---
 
 ![alt text](https://github.com/JonatanARivera/JonatanARivera.github.io/blob/master/assets/img/COVID-map.png)
-![alt text](https://miro.medium.com/max/1800/1*EX1BIdsskT6UpuZ1uGYpmg.png)
+
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
 Covid-19 has spread and impacted us in different magnitudes. For some of us, we have avoided contact with our closest family members, and for others, we have avoided hanging out at our favorite sports center. But, the vast majority of us have been affected by how much death toll Covid-19 has had in our respective counties or communities. For this reason, I felt the need to dig into the data available on Covid-19, and model potential correlations based on population and deaths per U.S counties.
