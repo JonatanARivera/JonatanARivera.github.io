@@ -21,6 +21,8 @@ Yellow points represent deaths over 100 ; also the size of points represents th
     <script data-plotly="jonatan5696:26" sharekey-plotly="gsYWWjaCPhjTM1hhx0tqGK" src="https://plotly.com/embed.js" async></script>
 </div>
 
+
+
 One possible explanation for the higher death toll in some counties more than others, despite differences in population, could be due to how late a county implements social distancing policies. For example, Los Angeles County and New York City implemented stay at home policies as late as 4 weeks after their first reported cases of Covid-19, in their respective regions (1); which compared to the Bay Area in Northern California is late, having implemented policies 2 weeks earlier (1). Also, the staggering differences between these two states could also have to do with how late the statewide home orders were executed, which in New York, came about five days later after California's order(2).
 
 
