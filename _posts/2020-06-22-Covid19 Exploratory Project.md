@@ -6,6 +6,7 @@ cover-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
+http://jonatanrivera.me/Visualizations/Covid-19DeathsbyCounty2.html
 
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
