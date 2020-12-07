@@ -8,9 +8,9 @@ tags: [books, test]
 
 http://jonatanrivera.me/Visualizations/Covid-19DeathsbyCounty2.html
 
+<center><img src="`https://cdn-images-1.medium.com/max/1800/1*EX1BIdsskT6UpuZ1uGYpmg.png`"></center>
+
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
-
-
 
 
 In this project, I attempt to answer a basic question: is the population associated with Covid-19 deaths per U.S counties? 
