@@ -8,7 +8,6 @@ tags: [books, test]
 
 ![alt text](https://github.com/JonatanARivera/JonatanARivera.github.io/blob/master/assets/img/COVID-map.png)
 
-
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
 
