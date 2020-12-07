@@ -6,7 +6,7 @@ cover-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
-![alt text](http://cdn-images-1.medium.com/max/1800/1*EX1BIdsskT6UpuZ1uGYpmg.png/to/img.png)
+![alt text](https://miro.medium.com/max/1800/1*EX1BIdsskT6UpuZ1uGYpmg.png)
 ![alt text](https://github.com/JonatanARivera/JonatanARivera.github.io/blob/master/assets/img/COVID-map.png)
 
 
