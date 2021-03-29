@@ -41,7 +41,7 @@ One possible explanation for the higher death toll in some counties more than ot
 
 <div>
     <a href="https://plotly.com/~jonatan5696/35/?share_key=NTwlC5hrhEC8CochwlCZTJ" target="_blank" title="Florida" style="display: block; text-align: center;"><img src="https://plotly.com/~jonatan5696/35.png?share_key=NTwlC5hrhEC8CochwlCZTJ" alt="Florida" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="jonatan5696:35" sharekey-plotly="NTwlC5hrhEC8CochwlCZTJ" src="https://plotly.com/embed.js" async></script>
+    
 </div>
 
 Another example, of how implementing a social distancing policy late might impact a county's Covid-19 timeline, is Hillsborough County in Florida. The trend was similar to that noted above, the earlier the social distancing procedures were implemented, the less the death toll was for the respective county. For example, Hillsborough County implemented its 6-feet distancing practices on March 17, 2020, approximately 2 weeks after the first two reported cases in Florida (3). However, a county with similar population size Palm Beach County in Florida didn't implement its social distancing policy until March 22, 2020, or about 5 days after Hillsborough County (4). These 5 days late into the implementation of the social distancing policy, possibly, might have contributed to the more deaths in Palm Beach compare to Hillsborough.
