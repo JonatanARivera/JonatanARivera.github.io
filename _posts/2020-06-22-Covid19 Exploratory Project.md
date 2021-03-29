@@ -5,7 +5,7 @@ subtitle:
 cover-img: /assets/img/COVID-map.png
 tags: [books, test]
 ---
-![](img/COVID-map.png?raw=true)
+![](/assets/img/COVID-map.png?raw=true)
 
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
