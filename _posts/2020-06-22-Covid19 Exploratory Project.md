@@ -18,7 +18,7 @@ From the 3D Scatter plot I made below, we can see there is logarithmic growth of
 
 <div>
     <a href="https://plotly.com/~jonatan5696/21/?share_key=vB5rxfmNkBSVpbco3FnlZW" target="_blank" title="Final_PopCovidDeathsJune14" style="display: block; text-align: center;"><img src="https://plotly.com/~jonatan5696/21.png?share_key=vB5rxfmNkBSVpbco3FnlZW" alt="Final_PopCovidDeathsJune14" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="jonatan5696:21" sharekey-plotly="vB5rxfmNkBSVpbco3FnlZW" src="https://plotly.com/embed.js" async></script>
+
 </div>
 
 Yellow points represent deaths over 100 ; also the size of points represents the amount death toll relative to other counties
