@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Data Exploration Project
+title:  Data Exploration Project _
 subtitle: 
 cover-img: /assets/img/path.jpg
 tags: [books, test]
