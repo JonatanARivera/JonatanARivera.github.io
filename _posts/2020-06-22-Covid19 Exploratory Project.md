@@ -5,8 +5,7 @@ subtitle:
 cover-img: /assets/img/COVID-map.png
 tags: [books, test]
 ---
-
-![](https://github.com/JonatanARivera/JonatanARivera.github.io/blob/master/_posts/img/COVID-map.png?raw=true)
+![](img/COVID-map.png?raw=true)
 
 # Is There an Association between Population and Covid-19 Deaths Per U.S county?
 
