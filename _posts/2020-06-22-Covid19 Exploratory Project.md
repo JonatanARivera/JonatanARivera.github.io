@@ -27,7 +27,8 @@ Yellow points represent deaths over 100 ; also the size of points represents th
 
 <div>
     <a href="https://plotly.com/~jonatan5696/26/?share_key=gsYWWjaCPhjTM1hhx0tqGK" target="_blank" title="NewYorkVSCalifornia" style="display: block; text-align: center;"><img src="https://plotly.com/~jonatan5696/26.png?share_key=gsYWWjaCPhjTM1hhx0tqGK" alt="NewYorkVSCalifornia" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="jonatan5696:26" sharekey-plotly="gsYWWjaCPhjTM1hhx0tqGK" src="https://plotly.com/embed.js" async></script>
+    
+
 </div>
 
 
