@@ -2,7 +2,7 @@
 layout: post
 title:  Data Exploration Project
 subtitle: 
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/COVID-map.png
 tags: [books, test]
 ---
 
