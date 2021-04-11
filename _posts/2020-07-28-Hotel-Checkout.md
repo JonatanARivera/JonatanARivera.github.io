@@ -16,7 +16,7 @@ The data set was collected from a publication in Science Direct but was aggregat
 Processes:
 I began this project by doing some exploratory analysis and looking at the descriptive statistics of both numerical and categorical features. Since each observation represented a booking, I choose the Reservation Status column as my target vector. It's important to note that the original data had 3 classes in the target vector. The classes consisted of 'No-Show," "Cancelled," and "Check Out". I grouped "No-Shows" with "Cancelled " as "No-Shows" are typically canceled by the hotel, so I assume a late cancellation whenever there was a "No Show". This model works best when this assumption is taken to account. Additionally, this data is limited to resort and city hotels in Portugal, so the model, likely works differently, if we were dealing with motels, apartment hotels, taken place elsewhere. Lastly, this data set is limited to 3 years; it would be helpful if in the future if I could aggregate more data from other hotels, and see if I can better generalize or even improve the accuracy of my models.
 
-![image](../assets/img/hotel_project_photos/bar_graph.jpeg)
+![image](/assets/img/hotel_project_photos/bar_graph.png)
 
 
 
