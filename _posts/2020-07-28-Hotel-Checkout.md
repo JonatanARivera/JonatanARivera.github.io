@@ -8,7 +8,7 @@ tags: [books, test]
 
 Project Goals:
 Construct classification models that are able to predict whether a hotel guest will end up canceling or checking out from his/her booked hotel in Portugal.
-Build a Heroku App that is user friendly and implements the best machine learning model.
+Build a [Heroku App](https://hotelcheckout.herokuapp.com) that is user friendly and implements the best machine learning model.
 
 Background:
 The data set was collected from a publication in Science Direct but was aggregated in Kaggle(1,2). It consists of data from a resort hotel and a city hotel in Portugal. It also consists of data from the years 2015, 2016, and 2017. The data set was fairly cleaned but I still had to do some data wrangling to remove features that were redundant, leaked information of my target set, or features that ended up having low permutation importance.
