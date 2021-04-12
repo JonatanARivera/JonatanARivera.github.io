@@ -73,7 +73,7 @@ Quick Definition on the AUC-ROC curve: The AUC represents the area of the curve 
 
 It's important to note, that the Random Forest and Logistic Regression used 22 features, while XGBoost only used 9, so I was ultimately able to create an XGBoost model that used fewer features and had better predictive power. As you can see from the curve below, the best classification model ended up being XGBoost with respect to AUC score.
 
-![image](/assets/img/roc_for_all_models_validation_set.png)
+![image](/assets/img/hotel_project_photos/roc_for_all_models_validation_set.png)
 
 ### Visualizations for Model Interpretation
 Using XGBoost on the validation data set
@@ -81,7 +81,7 @@ Using XGBoost on the validation data set
 ### Partial Dependence Plot
 The x-axis represents the types of deposits made: number 1 == "no-deposit", 2 == "refundable", 3=="no refundable". The y-axis represents the impact on whether someone will check out.
 
-![image](/assets/img/pdp_xgboost.png)
+![image](/assets/img/hotel_project_photos/pdp_xgboost.png)
 
 In this Partial Dependence Plot, non-refundable deposits are negatively impacting the probability that guest checks out. It turns out those who choose to make non-refundable deposits represent a minority class, and out of that minority class, the vast majority ended up canceling. The fact a lot of people aren't doing non-refundable deposits explains this negative impact on this model.
 From the validation data set alone, we can also see that people are already likely to cancel if the made a Non Refund deposit. Similar distributions can be seen in the Training data set as well.Interactive Partial Dependence Plot
