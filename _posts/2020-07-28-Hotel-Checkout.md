@@ -6,14 +6,14 @@ cover-img: /assets/img/hotel_chekout.jpeg
 tags: [books, test]
 ---
 
-Project Goals:
+### Project Goals:
 Construct classification models that are able to predict whether a hotel guest will end up canceling or checking out from his/her booked hotel in Portugal.
 Build a [Heroku App](https://hotelcheckout.herokuapp.com) that is user friendly and implements the best machine learning model.
 
-Background:
+### Background:
 The data set was collected from a publication in Science Direct but was aggregated in Kaggle(1,2). It consists of data from a resort hotel and a city hotel in Portugal. It also consists of data from the years 2015, 2016, and 2017. The data set was fairly cleaned but I still had to do some data wrangling to remove features that were redundant, leaked information of my target set, or features that ended up having low permutation importance.
 
-Processes:
+### Processes:
 I began this project by doing some exploratory analysis and looking at the descriptive statistics of both numerical and categorical features. Since each observation represented a booking, I choose the Reservation Status column as my target vector. It's important to note that the original data had 3 classes in the target vector. The classes consisted of 'No-Show," "Cancelled," and "Check Out". I grouped "No-Shows" with "Cancelled " as "No-Shows" are typically canceled by the hotel, so I assume a late cancellation whenever there was a "No Show". This model works best when this assumption is taken to account. Additionally, this data is limited to resort and city hotels in Portugal, so the model, likely works differently, if we were dealing with motels, apartment hotels, taken place elsewhere. Lastly, this data set is limited to 3 years; it would be helpful if in the future if I could aggregate more data from other hotels, and see if I can better generalize or even improve the accuracy of my models.
 
 ![image](/assets/img/hotel_project_photos/bar_graph.png)
@@ -23,20 +23,33 @@ I began this project by doing some exploratory analysis and looking at the descr
 
 During my exploratory analysis, I encounter data leakage; this occurs whenever there is information about the target set, that gets leaked into your features, influencing your model to overfit. Consequently, it poorly generalizes to other data. I notice leakage with the is_canceled feature; this feature has binary values of 0 and 1, where 1 represents the person canceled the booking and 0 that he did not.
 
+![image](/assets/img/hotel_project_photos/wrangle_data.png)
 
 This was a time-series data set so I split the data into 3 different data sets, training, validation, and testing set based on years 2015,2016, and 2017. The shapes of the data set were the following:
+
+![image](/assets/img/hotel_project_photos/shape_of_train.png)   
+
+
 The baseline represents the simplest prediction. As a result, I choose the majority class ("Check-Out"), which also represents the positive class in the rest of my models.
 
-Model Building & Evaluation Metrics
-Model Definitions
+![image](/assets/img/hotel_project_photos/baseline.png)
+
+
+
+### Model Building & Evaluation Metrics
+
+### Model Definitions
 Random Forest Classifier: a classification model that uses a machine-learning algorithm to fit multiple decision trees to subsets of the data. It then takes the averages of the predictions made in these decision trees to improve accuracy and control overfitting(3).
 Logistic Regression: a linear model for classification that uses the logistic function to predict probabilities for individual observations in the data set. It predicts classes based on these probabilities(4).
 XGBoost Classifier: is a classification model that takes advantage of gradient boosting and improves upon it. Gradient boosting is a machine learning algorithm that systematically produces weak ensemble models (often decision trees), and gradually corrects and builds on these weak models; ultimately it produces a prediction model(5).
 
 Although I used accuracy to measure the effectiveness of the model, I was still considerate of the slight class imbalance. So on top of accuracy, I used the AUC score and AUCROC curve to measure which model was the best.
 
-Model Optimization Techniques:
+### Model Optimization Techniques:
 I mainly used the Random Search CV technique to optimize the hyperparameters in my Random Forest Classifier; this hyper tunning technique involves testing a random set of hyperparameters and then choosing the best parameters that result in the best score (such as accuracy) for the model (6).
+![image](/assets/img/hotel_project_photos/model0_randomforest.png)
+![image](/assets/img/hotel_project_photos/randomforestclassification.png)
+)
 I was able to optimize my XGBoost model and improve my AUC score with early stopping and permutation importance. Early stopping involves picking the best number of n-estimators or iterations that the XGBoost model can run until it stops improving (7). This helps one save time, and reduce overfitting.
 
 To further optimize the XGBoost model, I used permutation importances. This technique involves shuffling the values of the features/columns and testing the accuracy of the model; if this shuffling results in a model with significantly lower accuracy, then this feature is considered to be important (8). The best features are represented as bigger weights, and they are the features with the most predictive power.
