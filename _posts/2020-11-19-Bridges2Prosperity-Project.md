@@ -2,11 +2,13 @@
 layout: post
 title: Let's Build Bridges to Create Opportunities
 subtitle: 
+cover-img: /assets/img/bridges_to_prosperity.jpeg
 gh-repo: "https://github.com/JonRivera/bridges-to-prosperity-ds-d"
 gh-badge: [star, fork, follow]
 tags: [machine learning, database]
 comments: true
 ---
+
 
 A community benefiting from the construction of a bridge; Credit: https://bridgestoprosperity.mbakerintl.com/Introduction
 I worked with a cross-functional team and contributed to Bridges to Prosperity's mission; which is to " work with isolated communities to create access to essential health care, education and economic opportunities by building footbridges over impassable rivers." We contributed to the mission by constructing a web application that helps Bridges to Prosperity(B2P) have a reliable means of accessing their own data. On top of this, we created several machine learning models that can serve as tools by B2P engineers to save time and energy in deciding which bridges to prioritize when doing a technical assessment of whether or not to build a bridge.
