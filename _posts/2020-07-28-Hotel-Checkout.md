@@ -84,15 +84,38 @@ The x-axis represents the types of deposits made: number 1 == "no-deposit", 2 ==
 ![image](/assets/img/hotel_project_photos/pdp_xgboost.png)
 
 In this Partial Dependence Plot, non-refundable deposits are negatively impacting the probability that guest checks out. It turns out those who choose to make non-refundable deposits represent a minority class, and out of that minority class, the vast majority ended up canceling. The fact a lot of people aren't doing non-refundable deposits explains this negative impact on this model.
-From the validation data set alone, we can also see that people are already likely to cancel if the made a Non Refund deposit. Similar distributions can be seen in the Training data set as well.Interactive Partial Dependence Plot
 
-Deposit 1, represents no deposit, while 3 represents a non-refundable deposit. The iris scale represents the probability someone will check out based on what country and type of deposit are made.Countries are labeled by numbers (e.g PRT == 1).The y-axis represents countries encoded by numbers. This interactive partial dependence plot above shows that the model cares more about what type of deposit is being made than where the booking took place. Given more bookings come from Portugal, it makes sense that the XGBoost model tends to penalize Portugal bookings heavier when they involve non-refundable deposits.
-Value counts of where the bookings took place from the training data set.Shapley Values
+![image](/assets/img/hotel_project_photos/validation_set_unit_percentage.png)
+
+From the validation data set alone, we can also see that people are already likely to cancel if the made a Non Refund deposit. Similar distributions can be seen in the Training data set as well.
+
+### Interactive Partial Dependence Plot
+
+![image](/assets/img/hotel_project_photos/interactive_partial_dependence_plot.png)
+
+
+Deposit 1, represents no deposit, while 3 represents a non-refundable deposit.
+
+The iris scale represents the probability someone will check out based on what country and type of deposit are made.Countries are labeled by numbers (e.g PRT == 1).
+
+The y-axis represents countries encoded by numbers. This interactive partial dependence plot above shows that the model cares more about what type of deposit is being made than where the booking took place. Given more bookings come from Portugal, it makes sense that the XGBoost model tends to penalize Portugal bookings heavier when they involve non-refundable deposits.
+Value counts of where the bookings took place from the training data set.
+
+### Shapley Values
 
 The red chevron arrows represent features that positively impact whether someone will end up checking out. While, the blue arrows represent negative impact, influencing someone to more likely cancel. Someone from country 1 or PRT (Portugal), having picked 0 parking spaces, negatively impacts whether this person checks out.
 
+![image](/assets/img/hotel_project_photos/shapley_value_plot.png)
+
+
 In this shapley values plot, a non-refundable deposit, with a lead time of 113, and the person coming from a country of PRT determine with a 100% probability that he will end up canceling. It's important to note the model has a 77% accuracy and a .79 AUC.
-Test Results:
+
+### Test Results:
+
+![image](/assets/img/hotel_project_photos/test_roc.png)
+
+![image](/assets/img/hotel_project_photos/classification_report_for_xgboost_on_test.png)
+
 
 Conclusion:
 Throughout this process, I went over 3 models and explain their importance. I used the training data to fit my models and used the validation data set to evaluate my model's performance. The AUC-ROC curves did a good job at summarizing this point.
