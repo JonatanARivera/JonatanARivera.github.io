@@ -60,9 +60,9 @@ Using this technique, I was able to reduce the number of features in this model,
 
 ![image](/assets/img/hotel_project_photos/model1.png)
 
-![image](xgboost_permutation_importances.png)
+![image](/assets/img/hotel_project_photos/xgboost_permutation_importances.png)
 
-![image](/assets/img/classification_xgboost_report.png)
+![image](/assets/img/hotel_project_photos/classification_xgboost_report.png)
 
 The last model I worked was was Logistic Regression; I optimize the model by changing the default max_iter from 100 to 200. I mainly used the model to compare against XGBoost and Random Forest Classifier.
 
