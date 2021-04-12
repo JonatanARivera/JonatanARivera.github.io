@@ -129,12 +129,18 @@ GitHub Notebook:
 https://github.com/JonRivera/Hotel_Check_Out_Project/tree/master/notebooks
 
 References:
-1)https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib6
-2)https://www.kaggle.com/jessemostipak/hotel-booking-demand
-3)https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-4)https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-5)https://en.wikipedia.org/wiki/Gradient_boosting
-6)https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html
-7)https://xgboost.readthedocs.io/en/latest/python/python_intro.html
-8)https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html
-9)https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/
+1) https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib6
+
+2) https://www.kaggle.com/jessemostipak/hotel-booking-demand
+
+3) https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+
+4) https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression 5)https://en.wikipedia.org/wiki/Gradient_boosting
+
+6) https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html
+
+7) https://xgboost.readthedocs.io/en/latest/python/python_intro.html
+
+8) https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html
+
+9) https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/
