@@ -10,10 +10,13 @@ comments: true
 ---
 
 
-A community benefiting from the construction of a bridge; Credit: https://bridgestoprosperity.mbakerintl.com/Introduction
+A community benefiting from the construction of a bridge;
+Credit: https://bridgestoprosperity.mbakerintl.com/Introduction
+
+### Introduction
 I worked with a cross-functional team and contributed to Bridges to Prosperity's mission; which is to " work with isolated communities to create access to essential health care, education and economic opportunities by building footbridges over impassable rivers." We contributed to the mission by constructing a web application that helps Bridges to Prosperity(B2P) have a reliable means of accessing their own data. On top of this, we created several machine learning models that can serve as tools by B2P engineers to save time and energy in deciding which bridges to prioritize when doing a technical assessment of whether or not to build a bridge.
 
-Part 1: Making the Data Pretty and Accessible
+### Part 1: Making the Data Pretty and Accessible
 The product road map for the data science team was broken into exploring, cleaning, and processing of the data. This was followed by the construction of the database and the creation of the machine learning model.
 Using the 2018 Bridges to Prosperity (B2P) data set, collected from various villages in Rwanda, we cleaned the data using various Regex techniques. The challenges my team and I were assigned to solve were to parse out the 2013/2014 needs assessment data into current fields (2018 B2P data set) and be able to predict which sites from the field assessments will likely be technically rejected/accepted by a technical engineering review.
 The main concerns the data science team encounter were us not having enough relevant data points. This hindered us from creating a strong enough model. In other words, we dealt with a highly imbalanced data set. Needless to say, we compensated by using SMOTE techniques, which helped us create synthetic data based on existing labels based on the existing engineer's assessments.
@@ -23,7 +26,7 @@ I constructed endpoints on a fast API framework to pull all data we had cleaned.
 Several steps went into constructing the database with PostgreSQL, and this database was hosted on AWS. After creating the database, we uploaded the Bridges to Prosperity 2018 data set to the database.
 Fast API - Get Request Endpoint to pull data from Postgres SQL Data BaseThe remaining part of the project was to construct a model that helps reduce the time and money wasted by the engineering review team; this is done by guiding them to choose bridges with higher chances of being approved by the engineer. This was done by using a random forest and semi-supervised model.
 
-Part 2: Problem and Challenges - Powering Through
+### Part 2: Problem and Challenges - Powering Through
 The main features that the data science team worked during our model building were:
 bridge_classification
 bridge_opportunity_bridge_type
@@ -39,6 +42,8 @@ With that being said, in the short term, we can take advantage of using a random
 
 The random forest works well on the existing data set as shown in the confusion matrix below, but keeping in mind that the model was trained on 89 data points, which means that the model is likely overfitting and we would need to gather more data to make the model more generalizable.
 0 labels represent negatives and 1 represents positive; a negative represents a bridge likely to be rejected and a 1 represents. a bridge likely to be accepted by the engineer.Part 3: Wrapping things Up
+
+### Part 3: Wrapping things Up
 
 Present
 The current state of our product is we have a deployed website: This website pulls data from the Postgres SQL data based discussed earlier.
