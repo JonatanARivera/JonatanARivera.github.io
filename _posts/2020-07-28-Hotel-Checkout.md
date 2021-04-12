@@ -47,27 +47,41 @@ Although I used accuracy to measure the effectiveness of the model, I was still 
 
 ### Model Optimization Techniques:
 I mainly used the Random Search CV technique to optimize the hyperparameters in my Random Forest Classifier; this hyper tunning technique involves testing a random set of hyperparameters and then choosing the best parameters that result in the best score (such as accuracy) for the model (6).
+
 ![image](/assets/img/hotel_project_photos/model0_randomforest.png)
+
 ![image](/assets/img/hotel_project_photos/randomforestclassification.png)
 )
 I was able to optimize my XGBoost model and improve my AUC score with early stopping and permutation importance. Early stopping involves picking the best number of n-estimators or iterations that the XGBoost model can run until it stops improving (7). This helps one save time, and reduce overfitting.
 
 To further optimize the XGBoost model, I used permutation importances. This technique involves shuffling the values of the features/columns and testing the accuracy of the model; if this shuffling results in a model with significantly lower accuracy, then this feature is considered to be important (8). The best features are represented as bigger weights, and they are the features with the most predictive power.
+
 Using this technique, I was able to reduce the number of features in this model, from 22 to 9. Reducing the features, helped me create a better Heroku app as well, and allowed my models to run faster.
+
+![image](/assets/img/hotel_project_photos/model1.png)
+
+![image](xgboost_permutation_importances.png)
+
+![image](/assets/img/classification_xgboost_report.png)
 
 The last model I worked was was Logistic Regression; I optimize the model by changing the default max_iter from 100 to 200. I mainly used the model to compare against XGBoost and Random Forest Classifier.
 
-Evaluation Metrics
+### Evaluation Metrics
 Note that the validation scores were included inside the classification reports. This allows me to be concise in reporting all the validation scores for all three models. I also summarize the AUC validation scores for all three models in the AUCROC curve below.
 
 Quick Definition on the AUC-ROC curve: The AUC represents the area of the curve or the summary of ROC. On the other hand, ROC represents the probability curve itself; this curve plots the true positive rate against false-positive rates. In other words, ROC is checking at different probabilistic thresholds for how good the model is able to maximize true positives against false positives. Ideally, the AUC would be 1, and we would always be correctly predicting true positives and true negatives. True positives represent the main class I was interested in predicting ("Check-Out"), while true negatives represent the other class ("Canceled") I predicted, and correctly classified (9).
 
 It's important to note, that the Random Forest and Logistic Regression used 22 features, while XGBoost only used 9, so I was ultimately able to create an XGBoost model that used fewer features and had better predictive power. As you can see from the curve below, the best classification model ended up being XGBoost with respect to AUC score.
 
-Visualizations for Model Interpretation
+![image](/assets/img/roc_for_all_models_validation_set.png)
+
+### Visualizations for Model Interpretation
 Using XGBoost on the validation data set
-Partial Dependence Plot
+
+### Partial Dependence Plot
 The x-axis represents the types of deposits made: number 1 == "no-deposit", 2 == "refundable", 3=="no refundable". The y-axis represents the impact on whether someone will check out.
+
+![image](/assets/img/pdp_xgboost.png)
 
 In this Partial Dependence Plot, non-refundable deposits are negatively impacting the probability that guest checks out. It turns out those who choose to make non-refundable deposits represent a minority class, and out of that minority class, the vast majority ended up canceling. The fact a lot of people aren't doing non-refundable deposits explains this negative impact on this model.
 From the validation data set alone, we can also see that people are already likely to cancel if the made a Non Refund deposit. Similar distributions can be seen in the Training data set as well.Interactive Partial Dependence Plot
