@@ -99,16 +99,20 @@ Deposit 1, represents no deposit, while 3 represents a non-refundable deposit.
 The iris scale represents the probability someone will check out based on what country and type of deposit are made.Countries are labeled by numbers (e.g PRT == 1).
 
 The y-axis represents countries encoded by numbers. This interactive partial dependence plot above shows that the model cares more about what type of deposit is being made than where the booking took place. Given more bookings come from Portugal, it makes sense that the XGBoost model tends to penalize Portugal bookings heavier when they involve non-refundable deposits.
+
+![image](/assets/img/hotel_project_photos/value_counts.png) 
+
 Value counts of where the bookings took place from the training data set.
 
 ### Shapley Values
 
 The red chevron arrows represent features that positively impact whether someone will end up checking out. While, the blue arrows represent negative impact, influencing someone to more likely cancel. Someone from country 1 or PRT (Portugal), having picked 0 parking spaces, negatively impacts whether this person checks out.
 
-![image](/assets/img/hotel_project_photos/shapley_value_plot.png)
-
+![image](/assets/img/hotel_project_photos/shapley_value_plot0.png)
 
 In this shapley values plot, a non-refundable deposit, with a lead time of 113, and the person coming from a country of PRT determine with a 100% probability that he will end up canceling. It's important to note the model has a 77% accuracy and a .79 AUC.
+
+![image](/assets/img/hotel_project_photos/shapley_value_plot.png)
 
 ### Test Results:
 
@@ -117,18 +121,21 @@ In this shapley values plot, a non-refundable deposit, with a lead time of 113, 
 ![image](/assets/img/hotel_project_photos/classification_report_for_xgboost_on_test.png)
 
 
-Conclusion:
+### Conclusion:
+
 Throughout this process, I went over 3 models and explain their importance. I used the training data to fit my models and used the validation data set to evaluate my model's performance. The AUC-ROC curves did a good job at summarizing this point.
 The most important features that influence if someone checked out or not were: deposit type, followed by country, and lead time. On top of that, I looked at individual observations and tried to make sense out of them using Partial Dependence Plots. Lastly, using Shapley Values, we saw how using different combinations of features influenced the prediction;
+
 Lastly, the XGBoost and Random Forest had similar accuracy and ROC-AUC scores. Ultimately I used my Random Forest model to construct my Heroku app you can test below.
 
 Predict for yourself if a guest ends up checking out here:
 https://hotelcheckout.herokuapp.com/predictions
 
-GitHub Notebook:
+### GitHub Notebook:
 https://github.com/JonRivera/Hotel_Check_Out_Project/tree/master/notebooks
 
-References:
+### References:
+
 1) https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib6
 
 2) https://www.kaggle.com/jessemostipak/hotel-booking-demand
