@@ -128,7 +128,7 @@ The most important features that influence if someone checked out or not were: d
 
 Lastly, the XGBoost and Random Forest had similar accuracy and ROC-AUC scores. Ultimately I used my Random Forest model to construct my Heroku app you can test below.
 
-Predict for yourself if a guest ends up checking out here:
+### Predict for yourself if a guest ends up checking out here:
 https://hotelcheckout.herokuapp.com/predictions
 
 ### GitHub Notebook:
