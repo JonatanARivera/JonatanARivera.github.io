@@ -108,7 +108,7 @@ Value counts of where the bookings took place from the training data set.
 
 The red chevron arrows represent features that positively impact whether someone will end up checking out. While, the blue arrows represent negative impact, influencing someone to more likely cancel. Someone from country 1 or PRT (Portugal), having picked 0 parking spaces, negatively impacts whether this person checks out.
 
-![image](/assets/img/hotel_project_photos/shapley_value_plot0.png)
+![image](/assets/img/hotel_project_photos/shapley_value_plot0.png.png)
 
 In this shapley values plot, a non-refundable deposit, with a lead time of 113, and the person coming from a country of PRT determine with a 100% probability that he will end up canceling. It's important to note the model has a 77% accuracy and a .79 AUC.
 
